@@ -31,6 +31,7 @@ html {
     font-size: 36px;
     font-weight: normal;
     color: white;
+    max-width: 780px;
     text-align: center;
     display: flex;
     justify-content: center;
