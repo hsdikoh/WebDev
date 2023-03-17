@@ -1,0 +1,133 @@
+/**
+ TODO(you): Write the CSS necessary to complete HW1!
+*/
+
+
+html {
+    /* making html height 100% caused a serious bug and was unnecessary also
+      basically it made the size of the html the height of the viewport
+      so anything that overflowed the viewport initially would not fit in the border */
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  
+  header {
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/listicle_header.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  h1 {
+    font-family: "Roboto slab", serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /*centered and goes down in column format*/
+  .centered-down {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  #vrk-img {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    border-radius: 100%;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-width: thin;
+  }
+  
+  
+  .profile-text {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+    line-height: 24px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eb3467;/*#e6e6e6;*/
+    display: inline-block;
+  }
+  
+  
+  .articles {
+    width: 66.67%;
+  }
+  
+  
+  .article {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  
+    /*prevents margin collapse*/
+    display: inline-block;
+  }
+  
+  
+  .article-heading {
+    font-family: "Roboto slab", serif;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    margin: 0px;
+  }
+  
+  
+  .number-wrapper {
+    position: absolute;
+    left: -60%;
+    text-align: right;
+    /*display: inline-block;*/ /*apparently unnecessary probably because parent is a span*/
+    width: calc(60% - 40px);
+    color: rgb(0, 0, 0, 0.25);
+  }
+  
+  
+  .article-title {
+    color: rgb(156, 50, 127);
+  }
+  
+  
+  
+  a {
+    color: #42b4d6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(51, 51, 51);
+    margin: 20px 0px;
+  }
+  
+  
+  img {
+    width: 100%;
+    margin: 0px;
+  }

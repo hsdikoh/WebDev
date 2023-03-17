@@ -1,0 +1,40 @@
+body{
+    background-color: tomato;
+    text-align: center;
+}
+
+div{
+    display: inline-block;
+    background-color: white;
+    text-align: left;
+    border: 12px solid hotpink;
+    color: hsl(225, 73%, 57%);
+    width: 500px;
+}
+
+.ish{
+    background-color: yellow;
+}
+
+.irish{
+    font-size: 22px;
+}
+
+a{
+    display: block;
+    background-color: blueviolet;
+    /* width: 500px;
+    height: 300px; */
+}
+
+img{
+    width: 500px;
+}
+
+#ann{
+    background-color: firebrick;
+}
+
+highlight{
+    font-size: 20px;
+}

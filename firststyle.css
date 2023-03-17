@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    font-family: Helvetica;
+}
+
+div{
+    display: inline-block;
+    border: 10px solid hotpink;
+    text-align: left;
+    background-color: lavenderblush;
+}
+
+a{
+    display: block;
+    text-align: center;
+}
+
+span{
+    font-style: normal;
+    background-color: yellow;
+}
+
+em{
+    font-style: italic;
+    background-color: aqua;
+}

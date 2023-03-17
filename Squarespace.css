@@ -1,0 +1,154 @@
+nav{
+    /* height: 75px; */
+    /* background-color: royalblue; */
+    /* background-image: url("./Images/body-image-1.jpg"); */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header{
+    height: 400px;
+    background-image: url("./Images/header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: left;
+    justify-content: end;
+    color: white;
+    display: flex;
+}
+
+h1 {
+    font-family: "Roboto slab", serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li {
+    float: left;
+}
+
+li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: end;
+}
+
+
+img{
+    width : 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+nav img{
+    width : 10%;
+    height: 10%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#flex-container{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-small;
+    position: relative;
+}
+
+#logo{
+    display: inline-flex;
+
+}
+
+.logo-item{
+    height: 30px;
+    width: 100%;
+}
+
+.header-item{
+    height: 30px;
+    width: 60px;
+    color: white;
+    margin-top: 10px;
+}
+
+.flex-item{
+    border-radius: 10px;
+}
+
+/* .flex-item:nth-child(1){
+    background-image: url("./Images/body-image-1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.flex-item:nth-child(2){
+    background-image: url("./Images/body-image-2.jpg");
+    background-position: center;
+    background-size: cover;
+} */
+
+.header-item:nth-child(6){
+    border: 1px solid white;
+    border-radius: 20px;
+    justify-content: end;  
+
+}
+
+section{
+    height: 800px;
+    background-color: white;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    font-size: large;
+    background-image: "./Images/header.jpg";
+    
+}
+
+footer{
+    height: 100px;
+    background-color: black;
+}
+
+h3{
+    color: turquoise;
+}
+
+a{
+    color: turquoise;
+    text-decoration: none;
+}
