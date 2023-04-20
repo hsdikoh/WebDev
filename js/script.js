@@ -41,7 +41,6 @@ lowButton.addEventListener("click", ()=>{
         showMessageOnScreen("Current is " + currentNumber +"<br>"+"You lost")
     }
     updateScreen()
-
 })
 
 
