@@ -15,17 +15,17 @@ left_paddle.shapesize(stretch_wid=5, stretch_len=1)
 left_paddle.penup()
 left_paddle.goto(-350, 0)
 
-right_paddle = turtle.Turtle()
-right_paddle.speed(0)
-right_paddle.shape("square")
-right_paddle.color("blue")
-right_paddle.shapesize(stretch_wid=5, stretch_len=1)
-right_paddle.penup()
-right_paddle.goto(350, 0)
+computer_paddle = turtle.Turtle()
+computer_paddle.speed(0)
+computer_paddle.shape("square")
+computer_paddle.color("blue")
+computer_paddle.shapesize(stretch_wid=5, stretch_len=1)
+computer_paddle.penup()
+computer_paddle.goto(350, 0)
 
 # Create the ball
 ball = turtle.Turtle()
-ball.speed(0)
+ball.speed(500)
 ball.shape("circle")
 ball.color("white")
 ball.penup()
@@ -36,30 +36,32 @@ ball.dy = -0.1
 # Move the paddles
 def move_left_paddle_up():
   y = left_paddle.ycor()
-  y += 20
+  y += 100
   left_paddle.sety(y)
 
 def move_left_paddle_down():
   y = left_paddle.ycor()
-  y -= 20
+  y -= 100
   left_paddle.sety(y)
 
-def move_right_paddle_up():
-  y = right_paddle.ycor()
-  y += 20
-  right_paddle.sety(y)
+def move_computer_paddle_up():
+  y = computer_paddle.ycor()
+  y += 100
+  computer_paddle.sety(y)
 
-def move_right_paddle_down():
-  y = right_paddle.ycor()
-  y -= 20
-  right_paddle.sety(y)
+def move_computer_paddle_down():
+  y = computer_paddle.ycor()
+  y -= 100
+  computer_paddle.sety(y)
 
 # Bind the keyboard keys to the paddle movement functions
 screen.listen()
 screen.onkey(move_left_paddle_up, "w")
 screen.onkey(move_left_paddle_down, "s")
-screen.onkey(move_right_paddle_up, "Up")
-screen.onkey(move_right_paddle_down, "Down")
+
+# Set up the computer paddle movement algorithm
+def computer_paddle_ai():
+  computer_paddle.sety(ball.ycor())
 
 # Main game loop
 while True:
@@ -84,11 +86,14 @@ while True:
   if ball.ycor() < -200 or ball.ycor() > 200:
     break
 
+  # Move the computer paddle
+  computer_paddle_ai()
+
   # Update the screen
   screen.update()
 
 # Display the winner
 if ball.xcor() < -360:
-  print("Player 1 wins!")
+  print("You win!")
 else:
-  print("Player 2 wins!")
+  print("Computer wins!")
