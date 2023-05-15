@@ -25,13 +25,13 @@ computer_paddle.goto(350, 0)
 
 # Create the ball
 ball = turtle.Turtle()
-ball.speed(500)
+ball.speed(0)
 ball.shape("circle")
 ball.color("white")
 ball.penup()
 ball.goto(0, 0)
-ball.dx = 0.1
-ball.dy = -0.1
+ball.dx = 5
+ball.dy = -3
 
 # Move the paddles
 def move_left_paddle_up():

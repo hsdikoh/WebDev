@@ -131,6 +131,6 @@ fieldset:hover{
     color: rgb(0, 0, 134);
 }
 
-#read{
-    justify-content: end;
+.read{
+    justify-content: flex-end;
 }
