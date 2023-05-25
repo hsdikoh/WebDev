@@ -55,3 +55,11 @@ img{
     height: 50%;
     width: 100%;
 }
+
+.kebab{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    align-items: end;
+    justify-content: end;
+}

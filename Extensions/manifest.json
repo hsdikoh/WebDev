@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Extension 1",
+    "version": "1.0.1",
+    "icons": {
+      "32": "icons/32.png",
+      "72": "icons/72.png",
+      "128": "icons/128.png",
+      "512": "icons/512.png"
+    },
+    "content_scripts": [
+      {
+        "js": [
+          "content.js"
+        ],
+        "matches": [
+          "http://*/*",
+          "https://*/*"
+        ]
+      }
+    ]
+  }
